@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_main_bg"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="316dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="147dp"
+        android:layout_marginRight="147dp"
+        android:background="@drawable/login_login_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/login_input2_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.jaydenxiao.common.commonwidget.ClearEditText
+                android:id="@+id/cet_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:background="@null"
+                android:layout_marginTop="43dp"
+                android:hint="@string/input_name"/>
+
+            <com.jaydenxiao.common.commonwidget.ClearEditText
+                android:id="@+id/cet_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:hint="@string/input_password"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/login_button_bg"
+                android:text="@string/btn_login_login"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/login_button_bg"
+                android:text="@string/btn_login_setting"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_remain_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ck_login_rename"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/cb_remain_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ck_login_repassword"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.jaydenxiao.common.commonwidget.LoadingTip
+        android:id="@+id/loadedTip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

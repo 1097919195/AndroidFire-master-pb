@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报刊服务器地址:"
+            android:textSize="18dp" />
+
+        <com.jaydenxiao.common.commonwidget.ClearEditText
+            android:id="@+id/cet_setting_paperip"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="http://rj.zzx1983.com:30034/" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送服务器地址:"
+            android:textSize="18sp" />
+
+        <com.jaydenxiao.common.commonwidget.ClearEditText
+            android:id="@+id/cet_setting_sendip"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="http://192.168.0.8:8778/" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#5A69CC"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#5A69CC"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/red"
+        android:text="注:服务器地址格式-http://127.0.0.1:80/ "/>
+</LinearLayout>
+</LinearLayout>

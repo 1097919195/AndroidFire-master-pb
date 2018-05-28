@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="124dp"
+        android:background="@drawable/main_top">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_sendtpress">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/send_newspaper_title"
+                android:textSize="@dimen/text_send_title5" />
+
+            <TextView
+                android:id="@+id/tv_newspaper_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:textColor="#5a69cc"
+                android:textSize="@dimen/text_send_title5" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#5a69cc"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:gravity="center_vertical"
+                android:text="@string/send_thepress_title"
+                android:textSize="@dimen/text_send_title5" />
+
+            <TextView
+                android:id="@+id/tv_thepress_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:textColor="#5a69cc"
+                android:textSize="@dimen/text_send_title5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/sp_send_type"
+                android:layout_width="125dp"
+                android:layout_height="65dp"
+                android:background="@drawable/main_sipnner"
+                android:popupBackground="#5B69CC"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="@dimen/text_send_title3">
+
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/main_search_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="240dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="7dp"
+                    android:hint="请输入关键字搜索"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:textSize="@dimen/text_send_title3"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/iv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/main_search"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_end_send"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/main_lamp" />
+
+            <ImageView
+                android:id="@+id/iv_exit"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/main_exit" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="105dp"
+        android:background="?attr/dayNightBackground" />
+
+    <!--<com.flyco.tablayout.CommonTabLayout-->
+    <!--android:id="@+id/tab_layout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:padding="5dp"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:background="?attr/dayNightBackground"-->
+    <!--app:dayNightBackgroundAttr="dayNightBackground"-->
+    <!--tl:tl_indicator_height="0dp"-->
+    <!--tl:tl_iconHeight="20dp"-->
+    <!--tl:tl_iconWidth="20dp"-->
+    <!--tl:tl_indicator_color="@color/gray"-->
+    <!--tl:tl_textSelectColor="@color/main_color"-->
+    <!--tl:tl_textUnselectColor="@color/light_gray"-->
+    <!--tl:tl_textsize="11sp"-->
+    <!--tl:tl_underline_height="0dp" />-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/iv_tx"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/toux2" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:textSize="21sp"/>
+
+            <ImageView
+                android:id="@+id/iv_send_newspaper"
+                android:layout_width="124dp"
+                android:layout_height="122dp"
+                android:src="@drawable/snewspaper_out"
+                />
+
+            <ImageView
+                android:id="@+id/iv_send_thepress"
+                android:layout_width="124dp"
+                android:layout_height="122dp"
+                android:src="@drawable/sthepress_out"
+                />
+
+            <ImageView
+                android:id="@+id/iv_send_setting"
+                android:layout_width="124dp"
+                android:layout_height="122dp"
+                android:visibility="gone"
+                android:src="@drawable/sthepress_out" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/container_department_one"
+                android:background="#5B94FF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/iv_department_one"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/belong_to_normal"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="21sp"
+                    android:text="直属机关"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e2e1e1">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_department_two"
+                android:background="#5B94FF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/iv_department_two"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/belong_to_normal"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="21sp"
+                    android:text="所有司局"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

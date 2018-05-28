@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.jaydenxiao.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb_bs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_bsdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1231313"/>
+    <com.aspsine.irecyclerview.IRecyclerView
+        android:id="@+id/irc_bslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:refreshEnabled="true"
+        app:loadMoreEnabled="true"
+        app:refreshHeaderLayout="@layout/layout_irecyclerview_classic_refresh_header" />
+</LinearLayout>

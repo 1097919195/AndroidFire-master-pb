@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerarr">
+        <item>搜报箱</item>
+        <item>搜报纸</item>
+        <item>搜期刊</item>
+    </string-array>
+
+</resources>
